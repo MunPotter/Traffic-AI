@@ -17,7 +17,7 @@ def main():
 
     # prepare webcam
     cap = cv2.VideoCapture(0)
-    #cap = cv2.imread(r'C:\Users\minha\Desktop\fall 2019\499B\server\server_example\server/IMG_20190817_162642.jpg', cv2.IMREAD_UNCHANGED)
+
     while True:
         # read frame from webcam
         ret, frame = cap.read()
@@ -54,14 +54,14 @@ def main():
         # server sent the grayscale image in the form of base64 string under the property named 'processed_img'
         prediction = prediction_json['prediction']
         
-        # convert the base64 string to bytes, then to flattened array, then reshape to actual grayscale 2D array
-        # decoded_processed_img_buffer = base64.b64decode(processed_img_string)    
-        # decoded_processed_img_flattened = np.frombuffer(decoded_processed_img_buffer, dtype=np.uint8)
-        # decoded_img = np.reshape(decoded_processed_img_flattened, (224, 224))
+        convert the base64 string to bytes, then to flattened array, then reshape to actual grayscale 2D array
+        decoded_processed_img_buffer = base64.b64decode(processed_img_string)    
+        decoded_processed_img_flattened = np.frombuffer(decoded_processed_img_buffer, dtype=np.uint8)
+        decoded_img = np.reshape(decoded_processed_img_flattened, (224, 224))
         
-        # # show the two frames
-        # cv2.imshow("Client frame", frame)
-        # cv2.imshow("Server processed frame", decoded_img)
+        # show the two frames
+        cv2.imshow("Client frame", frame)
+        cv2.imshow("Server processed frame", decoded_img)
 
         print("From client side >> ", prediction)
         
