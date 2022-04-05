@@ -2,17 +2,25 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 ## Real-Time Traffic Detection And Management from an Image using Machine Learning Approach (Part of Smart Street:Street of Next Generation)
-```bash
-this is confidential project so i just provide some function
 
-```
+## Description
+
+We introduce a traffic system that is more robust and minimize waiting time. The system intends to identify high traffic and low traffic in order to control traffic on each side of the road with the help of a machine learning model. In this paper, we use a transfer learning technique where Pre-trained CNN networks are loaded to extract features from the image. The system will take a video feed of the roads and feed it to a machine learning model. The overall system will consist of a server and a client-side. The machine learning model is made up of a VGG-16 network for the feature extraction and uses SVM to perform the classification.
+
 <p>
 <a href="https://drive.google.com/file/d/1HX2p9uDoUI-qqHLXU-eCepNC6aVT3q7g/view" target="_blank">Video</a>
 </p>
 <p>
 <a href="https://drive.google.com/file/d/1vcpDvDnOvZFKNANMCl8xO_lEOCRvyk0M/view" target="_blank">Poster</a>
 </p>
+<p>
+<a href="https://github.com/MunPotter/Traffic-AI/tree/main/server_example" target="_blank">Inference</a>
+</p>
 
+```bash
+this is confidential project so i just provide some function.For inference check server example.
+
+```
 ## Library
 ```bash
 tensorflow
@@ -22,9 +30,7 @@ matplotlib
 sklearn
 opencv-python
 ```
-## Description
 
-We introduce a traffic system that is more robust and minimize waiting time. The system intends to identify high traffic and low traffic in order to control traffic on each side of the road with the help of a machine learning model. In this paper, we use a transfer learning technique where Pre-trained CNN networks are loaded to extract features from the image. The system will take a video feed of the roads and feed it to a machine learning model. The overall system will consist of a server and a client-side. The machine learning model is made up of a VGG-16 network for the feature extraction and uses SVM to perform the classification.
 
 ## Import library
 
